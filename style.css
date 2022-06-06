@@ -1,3 +1,9 @@
+html
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
 /* Common classes */
 .d-flex {
     display: flex;
@@ -5,19 +11,34 @@
 .justifyCenter {
     justify-content: center;
 }
+.alignitm
+{
+    align-items: center;
+}
+.tdec
+{
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
+.container
+{
+    position: sticky;
+    left: 0;
+    right: 100;
+    top:0;
+    bottom: auto;
+    width: 100%;
+    z-index: 10;
+}
+body
+{
+margin: 0px;
+}
 #topbar
 {
     width: 100%;
     height: 50px;
-    background-color: rgb(36, 38, 112);
+    background-color: #3c2d89;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,25 +72,385 @@
 
 .navbar-min
 {
-    max-width: 70%;
+    max-width: 1000px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     margin: auto;
-    background-color: antiquewhite;
     align-items: center;
 }
 
-.navbar-min div
+.menu
 {
-    margin-right: 40px;
+    margin:10px 40px 0px 0px;
 }
 
+.pilot
+{
+    color: #5f2ee5;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto 40px auto 0px;
+}
 .talk
 {
-    background-color: blue;
+    background-color: #5f2ee5;
     padding: 10px 20px;
     color: aliceblue;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
 }
 
+.banner
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.txtcon h1
+{
+font-size: 50px;
+font-weight: bold;
+color: rgb(58, 57, 57);
+}
+
+.txtcon p
+{
+line-height: 30px;
+}
+
+.banner .txtcon input
+{
+    padding: 15px;
+    width: 300px;
+    height: 20px;
+    border:.5px solid #5f2ee5;
+    border-radius: 3px;
+}
+
+.banner .txtcon button
+{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: #5f2ee5;
+    border-radius: 3px;
+    color: #ffff;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.banner a
+{
+    color: #47bfa4;
+    margin-top:20px;
+    display: block;
+    font-size: 15px;
+}
+
+.linecon
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 0px;
+    max-width: 1000px;
+    align-items: center;
+    font-weight: bold;
+    color: #3c2d89;
+}
+
+.line1 , .line2
+{
+    height: 2px;
+    width: 300px;
+    background-color: #3c2d89;
+}
+
+.starcon
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 30px auto 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.starcon div
+{
+    width: 200px;
+    height: auto;
+}
+
+.starcon .img1, .starcon .img2 ,.starcon .img3{
+    margin-top: 10px;
+}
+
+.starcon .img2{
+    margin-top: 10px;
+}
+
+.starcon .img3 {
+    margin-top: 10px;
+}
+
+
+
+.starcon p {
+    margin-top: 10px;
+}
+
+.starcon .wraper {
+    margin-top: 10px;
+}
+
+.starcon .star {
+    margin-top: 10px;
+}
+
+.starcon .img1 p,.starcon .img2 p,.starcon .img3 p
+{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(46, 45, 45);
+    margin-top: 10px;
+}
+
+.bluebarmax
+{
+    width: 100%;
+    height: 150px;
+    background-color: #5f2ee5;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.bluebarmin
+{
+    position: relative;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.bluebarmin img
+{
+    width: 200px;
+    height: 150px;
+}
+
+.background
+{
+    background-color: rgb(40, 40, 77);
+    color: #ffff;
+    padding: 5px 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+
+.june
+{
+    margin-left: 30px;
+    color: #ffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.para
+{
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #ffff;
+}
+
+.virtualcon
+{
+    display: flex;
+    align-items: center;
+}
+
+.rejbutton
+{
+    background-color: #ffff;
+    color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.logodot
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    left: 200px;
+    top: 1000px;
+    
+    
+}
+
+.donttxt
+{
+    font-style: italic;
+    color:#ffff;
+    margin-left: -63px;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight:bold;
+    
+}
+
+.headingcontainer
+{
+    background-color: #e2ebf1;
+    margin: 0px auto;
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3c2d89;
+    padding-top: 100px;
+}
+
+.cardcon
+{
+    max-width: 1000px;
+    height: 600px;
+    margin: 5px auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card1, .card2, .card3, .card4, .card5
+{
+    width: 270px;
+    height: 160px;
+    background-color:#fff;
+    margin:10px; 
+    padding: 20px;
+    align-items: center;
+}
+
+.card4, .card5
+{
+margin-top: -150px;
+}
+
+.card1 h3, .card2 h3, .card3 h3, .card4 h3, .card5 h3 
+{
+    margin: auto;
+    color: #5f2ee5;
+}
+
+.card1, p, .card2, p, .card3, p, .card4, p, .card5, p
+{
+    line-height: 25px;
+    color: #656363;
+}
+
+.card1 a, .card2 a, .card3 a, .card4 a
+{
+color: #47bfa4;
+}
+
+.whyforwardcon
+{
+    width: 1000px;
+    height: 500px;
+    /* display: block; */
+    justify-content:center;
+    margin: auto;
+    align-items: center;
+
+}
+.why
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3f3c3d;
+    margin: 200px auto 50px;
+    width: auto;
+    height: 50px;
+    text-align: center;
+}
+
+.whypara
+{
+    display: flex;
+    justify-content:space-between;
+    /* background-color: antiquewhite; */
+    height: 350px;    
+}
+
+.whypara1, .whypara2, .whypara3
+{
+    width: auto;
+    font-size: 14px;
+    letter-spacing: .3px;
+
+}
+
+.whypara1, .whypara2
+{
+    margin-right: 30px;
+}
+.whypara3
+{
+    margin-left: 30px;
+}
+.whypara1 img h4 p, .whypara2 img h4 p, .whypara3 img h4 p
+{
+margin-top: 20px;
+}
+
+.seepilot
+{
+    text-align: center;
+}
+.seepilot a:hover
+{
+    text-decoration: underline;
+}
+
+.wepartner
+{
+    text-align: center;
+    margin-top: 80px;
+    color: #3f3c3d;
+}
+.wepartner1
+{
+    margin-top: 10px;
+    color: #3f3c3d;
+}
+.imgcontainer
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    height: 300px;
+    width: 1000px;
+}
+.imgcontainer div
+{
+    width: 100px;
+    height: 30px;
+}
