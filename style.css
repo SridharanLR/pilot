@@ -1,5 +1,5 @@
 :root {
-    --maxWidthSize : 1000px;
+    --maxWidthSize: 1000px;
 }
 
 html {
@@ -100,7 +100,7 @@ body {
 .banner {
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: var(--maxWidthSize);
     margin: auto;
 }
 
@@ -145,7 +145,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 60px auto 0px;
-    max-width: 1000px;
+    max-width: var(--maxWidthSize);
     align-items: center;
     font-weight: bold;
     color: #3c2d89;
@@ -306,7 +306,7 @@ body {
 }
 
 .cardcon {
-    max-width: 1000px;
+    max-width: var(--maxWidthSize);
     height: 600px;
     margin: 5px auto;
     display: flex;
@@ -440,7 +440,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: var(--maxWidthSize);
     margin: 80px auto 0px auto;
     align-items: center;
 }
@@ -472,7 +472,7 @@ p {
 
 .cardABC {
     width: 1000px;
-    max-width: 1000px;
+    max-width: var(--maxWidthSize);
     height: 400px;
     margin: auto;
     display: flex;
@@ -554,17 +554,13 @@ p {
     align-items: center;
     /* position: relative; */
 }
-.backimg {
-    
-}
 
-.backimg 
-{
-position: absolute;
-bottom: 0;
-right: 0;
-/* z-index: 5; */
-background-repeat: no-repeat;
+.backimg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-repeat: no-repeat;
 }
 
 .master {
@@ -582,13 +578,127 @@ background-repeat: no-repeat;
     text-align: left;
 
 }
-.master1 div p
-{
+
+.master1 div p {
     width: 350px;
 }
 
 .master2 {
     width: 500px;
     height: 230px;
-    background-color: #b2a4da;
+    /* background-color: #b2a4da; */
+    display: flex;
+    align-items: center;
+
+}
+
+/* .masterAB
+{
+    align-items: center;
+    
+} */
+
+.masterA {
+    width: 500px;
+    height: 60px;
+    background-color: #ffff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+}
+
+.masterA {
+    padding-left: 25px;
+    color: #333;
+}
+
+.masterB {
+    width: 250px;
+    height: 60px;
+    background-color: #47bfa4;
+    margin-top: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.masterB a {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color: #ffff;
+
+}
+
+.copyrightcontainer {
+    width: 100%;
+    height: 500px;
+    background-color: aqu amarine;
+    display: flex;
+    justify-content: center;
+}
+
+.containerheading {
+    width: 1000px;
+    max-width: var(--maxWidthSize);
+    height: 400px;
+    /* background-color: chocolate; */
+    margin-top: 30px;
+    
+}
+.pilotimg
+{
+ text-align: left; 
+ /* background-color: #c8b6fc; */
+}
+
+.headingcontainer12
+{
+    width: 1000px;
+    max-width: var(--maxWidthSize);
+    display: flex;
+    margin-top: 30px;
+    /* justify-content: center; */
+    /* background-color: chartreuse; */
+}
+.headingcontainer1
+{
+    width: 200px;
+    height: 300px;
+    /* background-color: #5f2ee5; */
+    display: flex;
+}
+
+.headingcontainer2
+{
+    width: 800px;
+    height: 300px;
+    /* background-color: #5d586b; */
+    display: flex;
+}
+
+.headingcontainer1, .head1
+{
+    text-align: left;
+    line-height: 50px;
+}
+
+.head2
+{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 50px;    
+}
+
+.headingcontainer12 a
+{
+    color:#3f3c3d;
 }
